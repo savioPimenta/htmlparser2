@@ -1,5 +1,5 @@
 import { Parser, ParserOptions } from "./Parser.js";
-export { Parser, type ParserOptions };
+export { Parser, ParserOptions };
 
 import {
     DomHandler,
@@ -9,7 +9,7 @@ import {
     Document,
 } from "domhandler";
 
-export { DomHandler, type DomHandlerOptions };
+export { DomHandler, DomHandlerOptions };
 
 type Options = ParserOptions & DomHandlerOptions;
 
@@ -56,8 +56,7 @@ export function createDomStream(
 }
 
 export {
-    default as Tokenizer,
-    type Callbacks as TokenizerCallbacks,
+    default as Tokenizer, Callbacks as TokenizerCallbacks,
 } from "./Tokenizer.js";
 
 /*
